@@ -1,0 +1,9 @@
+package Polymorj;
+
+public class Father {
+	public void drink()
+	{
+		
+	}
+
+}

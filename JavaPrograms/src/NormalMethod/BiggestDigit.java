@@ -1,0 +1,30 @@
+package NormalMethod;
+
+import java.util.Scanner;
+
+public class BiggestDigit {
+	public static int bigDigit(int n)
+	{
+		int big=0;
+		while(n!=0)
+		{
+			int d=n%10;
+			if(big<d)
+			{
+				big=d;
+			}
+			n=n/10;
+		}
+		return big;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter The Number");
+		int n=sc.nextInt();
+		int s=bigDigit(n);
+		System.out.println("The Biggest Digit of Number"+n+" is: "+ s);
+
+	}
+
+}

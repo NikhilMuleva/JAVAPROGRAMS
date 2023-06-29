@@ -1,0 +1,38 @@
+package NormalMethod;
+
+import java.util.Scanner;
+
+//An Armstrong number is a positive m-digit number that is equal to the sum of the mth powers of their digits.
+//Example:153: 13 + 53 + 33 = 1 + 125+ 27 = 153
+///    125: 13 + 23 + 53 = 1 + 8 + 125 = 134 (Not an Armstrong Number)
+public class ArmstrongNumber {
+	public static boolean isArmstrong(int n)
+	{
+		int rem;
+		int temp=n;
+		int p=0;
+		while(n>0)
+		{
+			rem=n%10;
+			p=p+(rem*rem*rem);
+			n=n/10;
+		}
+		return temp==p;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number ");
+		int n= sc.nextInt();
+		boolean b= isArmstrong(n);
+		if(b==true)
+		{
+			System.out.println(n+" is armstrong");
+		}
+		else
+		{
+			System.out.println(n+" is Not armstrong");
+		}
+		
+	}
+
+}

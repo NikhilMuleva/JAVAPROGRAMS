@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class BinaryToDecimal {
+	public static int binToDec(int n) {
+		int dec=0
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Binary Number");
+		int bin=sc.nextInt();
+		int bd= binToDec(n);
+		System.out.println("Convert Binary to Decimal");
+
+	}
+
+}

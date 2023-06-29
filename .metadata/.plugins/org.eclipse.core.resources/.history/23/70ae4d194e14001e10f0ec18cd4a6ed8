@@ -1,0 +1,112 @@
+package com.list;
+
+public class SinglyLinkedList {
+
+	public static void main(String[] args) {
+		
+		class Node{
+			int data;
+			Node next;
+			public Node (int data)
+			{
+				this.data=data;
+			}
+			private Node head=null;
+			private Node tail=null;
+			private int size=0;
+			public int size()
+			{
+				return size;
+			}
+			private void insertAtBigin(int data) {
+				Node n= new Node(data);
+				if(head==null)
+				{
+					head =n;
+					tail=n;
+				}
+				else {
+					n.next=head;
+					head=n;
+				}
+			}
+			private void insertAtLast(int data)
+			{
+				Node  n = new Node(data);
+				tail.next=n;
+				tail=n;
+				
+			}
+			public  void add (int data) {
+				if(head==null)
+					insertAtBigin(data);
+				else
+					insertAtLast(data);
+				size++;
+					
+			}
+			public void add(int index,int data)
+			{
+				if(index>size || index<0)
+					throw new IndexOutOfBoundsException("Index is Out of range");
+				if(index==0)
+					insertAtBigin(data);
+				else if(index==size)
+					insertAtLast(data);
+				else {
+					Node n = new Node(data);
+					Node pointer=head;
+					for(int i=1;i<index;i++)
+					{
+						pointer=pointer.next;
+					}
+					n.next=pointer.next;
+					pointer.next=n;
+				}
+				size++;
+			}
+			public void display()
+			{
+				Node pointer=head;
+				while(pointer!=null)
+				{
+					System.out.println(pointer.data);
+					pointer=pointer.next;
+				}
+			}
+			public boolean contains(int data)
+			{
+				if(size==0)
+				{
+					return false;
+				}
+				Node pointer=head;
+				while(pointer!=null)
+				{
+					if(pointer .data==data)
+						return true;
+					pointer=pointer.next;
+				}
+				return false;
+			}
+			public int get(int data)
+			{
+				if(index>size || index<0 ||size==0)
+				{
+					throw new IndexOutOfBoundsException("Index is out of range");
+					
+				}
+				Node pointer=head;
+				for(int i=1;i<index;i++)
+				{
+					
+				}
+			}
+			
+			
+		}
+	}
+	
+}
+
+

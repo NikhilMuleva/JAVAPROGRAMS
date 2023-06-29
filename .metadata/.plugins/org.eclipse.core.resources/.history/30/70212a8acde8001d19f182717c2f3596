@@ -1,0 +1,21 @@
+package Abstraction;
+
+public class Son implements Father,Mother {
+	Son()
+	{
+		super();
+		System.out.println("Son");
+	}
+	
+	@Override
+	public void careF()
+	{
+		System.out.println("Father");
+	}
+	
+
+	public static void main(String[] args) {
+
+	}
+
+}

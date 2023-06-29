@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class SpyNumber {
+	public static boolean isSpyNumber(int n)
+	{
+		int sum=0,prod=1;
+		while(n>0)
+		{
+			int r =n%10;
+			sum=sum+r;
+			prod=prod*r;
+			n=n/10;
+			
+		}
+		return sum==prod;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number");
+		int n = sc.nextInt();
+		boolean rs = isSpyNumber(n);
+		if(rs==true)
+		{
+			System.out.println(n+" is Spy Number");
+		}
+		else
+		{
+			System.out.println(n+" is Not Spy number");
+		}
+	}
+
+}

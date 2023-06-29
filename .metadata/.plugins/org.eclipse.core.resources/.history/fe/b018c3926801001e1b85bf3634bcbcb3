@@ -1,0 +1,13 @@
+package NormalMethod;
+
+//A number is said to be the Disarium number when the sum of its digit raised to 
+//the power of their respective positions is equal to the number itself.
+
+//For example, 175 is a Disarium number as follows
+// 1power1 + 7power2 + 5power3  = 1 + 49 + 125 = 175
+//Some of the other examples of Disarium number are 89, 135, 518 etc.
+
+
+public class DisariumNumber {
+
+}

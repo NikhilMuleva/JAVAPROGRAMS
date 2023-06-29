@@ -1,0 +1,39 @@
+package Abstraction;
+
+public class Fan implements Switch,Regulator {
+	String name ;
+	String color;
+	int price;
+
+	 public void details()
+	{
+		System.out.println(this.name+" "+this.color+" "+this.price);
+	}
+	@Override
+	public void switchOn() {
+		System.out.println("Switch on");
+	}
+	@Override
+	public void switchOf()
+	{
+		System.out.println("Switch Of");
+	}
+	@Override
+	public void incSpeed()
+	{
+		System.out.println("Increase Speed");
+	}
+	@Override
+	public void decSpeed()
+	{
+		System.out.println("Decrease Speed");
+	}
+	
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

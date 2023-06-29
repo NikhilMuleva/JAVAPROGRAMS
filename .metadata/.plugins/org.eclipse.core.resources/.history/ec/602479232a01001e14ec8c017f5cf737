@@ -1,0 +1,14 @@
+package NormalMethod;
+
+import java.util.Scanner;
+
+public class PrimeNumberSum {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the Numbers ");
+		int n =sc.nextInt();
+		int ps = isPrimeSum(n);
+		System.out.println("The sum of prime "+n+" is "+pc);
+	}
+
+}

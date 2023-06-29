@@ -1,0 +1,11 @@
+package NormalMethod;
+
+// Strong Number: A Number that can be represented as the sum of the factorial of it's 
+//individual digits is known as a Strong Number.
+
+public class StrongNumber {
+	public static void main(String[] args) {
+		
+	}
+
+}

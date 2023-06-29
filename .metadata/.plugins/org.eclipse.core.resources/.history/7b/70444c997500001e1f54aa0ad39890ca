@@ -1,0 +1,9 @@
+//Read the Three distinct values from the user and the print  Middle values
+public class MiddleValues {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

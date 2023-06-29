@@ -1,0 +1,65 @@
+package NormalMethod;
+
+import java.util.Scanner;
+
+//A number is said to be the Disarium number when the sum of its digit raised to 
+//the power of their respective positions is equal to the number itself.
+
+//For example, 175 is a Disarium number as follows
+// 1power1 + 7power2 + 5power3  = 1 + 49 + 125 = 175
+//Some of the other examples of Disarium number are 89, 135, 518 etc.
+
+
+public class DisariumNumber {
+	public static int countDigit(int n)
+	{
+		int count=0;
+		while(n!=0)
+		{
+			int r=n%10;
+			count++;
+			n=n/10;
+		}
+		return count;
+	}
+	public static int pow(int n,int p)
+	{
+		int prod=1;
+		while(p>0)
+		{
+			p=p*n;
+			p--;
+		}
+		return p;
+	}
+	public static boolean isDisarium(int n)
+	{
+		int sum=0,temp=n;
+		int dc=countDigit(n);
+		do {
+			int d=n%10;
+			sum=sum+pow(d,dc);
+			dc--;
+			n=n/10;
+			
+		}while(n!=0);
+		return sum==temp;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter The Number");
+		int n=sc.nextInt();
+		
+		boolean rs= isDisarium(n);
+		if(rs==true)
+		{
+			System.out.println(n+" is a Disarium Number");
+		}
+		else
+		{
+			System.out.println(n+" is Not a Disarium Number");
+		}
+		
+	}
+
+}

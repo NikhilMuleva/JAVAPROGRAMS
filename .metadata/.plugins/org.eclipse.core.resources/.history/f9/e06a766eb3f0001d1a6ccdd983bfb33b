@@ -1,0 +1,10 @@
+package Polymorj;
+
+public class Son {
+	public void drink()
+	{
+		System.out.println("Coffe");
+	}
+
+
+}

@@ -1,0 +1,27 @@
+package com.list;
+
+public class SinglyLinkedList {
+
+	public static void main(String[] args) {
+		
+		class Node{
+			int data;
+			Node next;
+			public Node (int data)
+			{
+				this.data=data;
+			}
+			private Node head=null;
+			private Node tail=null;
+			private int size=0;
+			public int size()
+			{
+				return size;
+			}
+			
+		}
+	}
+	
+}
+
+

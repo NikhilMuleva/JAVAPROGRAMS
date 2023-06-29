@@ -1,0 +1,16 @@
+
+public class QuickSort {
+	public static void quickSort(int[] arr,int low,int high)
+	
+
+	public static void main(String[] args) {
+		int arr[] = {17,53,43,21,4,34,12,22};
+		quickSort(int arr,0,arr.length-1);
+		for(int a:arr)
+		{
+			System.out.println(a);
+		}
+
+	}
+
+}
